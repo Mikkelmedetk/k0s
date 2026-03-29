@@ -3,11 +3,6 @@ kind: Kustomization
 resources:
   - ../../base
 patches:
-  - path: namespace-patch.yaml
-    target:
-      kind: Namespace
-      name: gitlab-operator
-      version: v1
   - path: operator-group-patch.yaml
     target:
       kind: OperatorGroup
