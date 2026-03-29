@@ -5,6 +5,7 @@ metadata:
   namespace: gitlab-operator
 spec:
   chart:
+    version: 9.8.8
     values:
       global:
         hosts:
