@@ -1,9 +1,0 @@
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: gitlab-operator-subscription
-spec:
-  channel: stable
-  name: gitlab-operator
-  source: operatorhubio-catalog
-  sourceNamespace: olm
