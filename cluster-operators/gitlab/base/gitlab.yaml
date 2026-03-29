@@ -30,6 +30,9 @@ spec:
         ingress:
           configureCertmanager: false
           class: traefik
+          tls:
+            enabled: true
+            secretName: gitlab-tls
         rails:
           bootsnap:
             enabled: false
