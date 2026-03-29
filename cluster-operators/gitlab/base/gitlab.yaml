@@ -11,22 +11,22 @@ spec:
         hosts:
           domain: k0s.mdoktor.foo
           gitlab:
-            name: gitlab.mdoktor.foo
+            name: gitlab.k0s.mdoktor.foo
             https: false
           registry:
-            name: registry.mdoktor.foo
+            name: registry.k0s.mdoktor.foo
             https: false
           minio:
-            name: minio.mdoktor.foo
+            name: minio.k0s.mdoktor.foo
             https: false
           smartcard:
-            name: smartcard.mdoktor.foo
+            name: smartcard.k0s.mdoktor.foo
           kas:
-            name: kas.mdoktor.foo
+            name: kas.k0s.mdoktor.foo
           pages:
-            name: pages.mdoktor.foo
+            name: pages.k0s.mdoktor.foo
             https: false
-          ssh: gitlab.mdoktor.foo
+          ssh: gitlab.k0s.mdoktor.foo
         ingress:
           configureCertmanager: false
           class: traefik
