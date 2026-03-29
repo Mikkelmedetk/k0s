@@ -14,6 +14,7 @@ spec:
   destination:
     server: "https://kubernetes.default.svc" # deploy to current cluster
     namespace: gitlab-operator # the namespace for the operator resources
+  ignoreNamespaceResource: true
   syncPolicy:
     automated:
       prune: true # deletes resources no longer defined in Git
