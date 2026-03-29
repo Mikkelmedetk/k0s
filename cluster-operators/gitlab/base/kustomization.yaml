@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - operator-group.yaml
   - subscription.yaml
-  - namespace.yaml
