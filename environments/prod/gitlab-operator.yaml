@@ -1,0 +1,21 @@
+kind: Application
+metadata:
+  name: gitlab-operator
+  namespace: argocd # Argo CD is usually installed in 'argocd' namespace
+spec:
+  project: default # or your Argo CD project
+  source:
+    repoURL: "git@github.com:Mikkelmedetk/k0s.git" # replace with your repo
+    targetRevision: main # branch or tag
+    path: "cluster-operators/gitlab/overlays/prod" # points to overlay folder
+    directory:
+      recurse: true
+  destination:
+    server: "https://kubernetes.default.svc" # deploy to current cluster
+    namespace: gitlab-operator # the namespace for the operator resources
+  syncPolicy:
+    automated:
+      prune: true # deletes resources no longer defined in Git
+      selfHeal: true # automatically fix drift
+    syncOptions:
+      - CreateNamespace=true # creates namespace if it does not exist
