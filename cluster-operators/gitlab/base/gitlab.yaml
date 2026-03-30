@@ -49,7 +49,7 @@ spec:
       prometheus:
         install: false
       gitlab-runner:
-        install: false
+        install: true
       # Reduce replica counts, reducing CPU & memory requirements
       gitlab:
         webservice:
