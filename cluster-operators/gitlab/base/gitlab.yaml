@@ -44,8 +44,8 @@ spec:
         enabled: false
       pages:
         enabled: false
-      kas:
-        enabled: false
+        kas:
+          enabled: false
       smartcard:
         enabled: false
       # Don't use certmanager, we'll self-sign
