@@ -8,6 +8,16 @@ spec:
     version: 9.8.8
     values:
       global:
+        registry:
+          enabled: false
+        pages:
+          enabled: false
+        kas:
+          enabled: false
+        smartcard:
+          enabled: false
+        minio:
+          enabled: false
         hosts:
           domain: k0s.mdoktor.foo
           gitlab:
@@ -66,13 +76,3 @@ spec:
           service:
             type: NodePort
             nodePort: 32022
-        registry:
-          enabled: false
-        pages:
-          enabled: false
-        kas:
-          enabled: false
-        smartcard:
-          enabled: false
-        minio:
-          enabled: false
