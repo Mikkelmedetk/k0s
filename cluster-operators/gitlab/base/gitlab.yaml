@@ -8,16 +8,6 @@ spec:
     version: 9.8.8
     values:
       global:
-      registry:
-        enabled: false
-      pages:
-        enabled: false
-      kas:
-        enabled: false
-      smartcard:
-        enabled: false
-      minio:
-        enabled: false
         hosts:
           domain: k0s.mdoktor.foo
           gitlab:
@@ -50,6 +40,14 @@ spec:
           # Configure the clone link in the UI to include the high-numbered NodePort
           # value from below (`gitlab.gitlab-shell.service.nodePort`)
           port: 32022
+      registry:
+        enabled: false
+      pages:
+        enabled: false
+      kas:
+        enabled: false
+      smartcard:
+        enabled: false
       # Don't use certmanager, we'll self-sign
       installCertmanager: false
       # Use the `ingress` addon, not our Ingress (can't map 22/80/443)
