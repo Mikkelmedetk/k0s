@@ -14,16 +14,20 @@ spec:
             name: gitlab.k0s.mdoktor.foo
             https: false
           registry:
+            enabled: false
             name: registry.k0s.mdoktor.foo
             https: false
           minio:
             name: minio.k0s.mdoktor.foo
             https: false
           smartcard:
+            enabled: false
             name: smartcard.k0s.mdoktor.foo
           kas:
+            enabled: false
             name: kas.k0s.mdoktor.foo
           pages:
+            enabled: false
             name: pages.k0s.mdoktor.foo
             https: false
           ssh: gitlab.k0s.mdoktor.foo
@@ -46,12 +50,6 @@ spec:
       nginx-ingress:
         enabled: false
       # Save resources, only 3 CPU
-      kas:
-        enabled: false
-      pages:
-        enabled: false
-      smartcard:
-        enabled: false
       prometheus:
         install: false
       gitlab-runner:
