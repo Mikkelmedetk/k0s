@@ -61,16 +61,13 @@ spec:
       # Reduce replica counts, reducing CPU & memory requirements
       gitlab:
         webservice:
-          minReplicas: 1
-          maxReplicas: 1
+          replicas: 1
           workerProcesses: 1 # default is 2
         sidekiq:
-          minReplicas: 1
-          maxReplicas: 1
+          replicas: 1
           concurrency: 5
         gitlab-shell:
-          minReplicas: 1
-          maxReplicas: 1
+          replicas: 1
           # Map gitlab-shell to a high-numbered NodePort to support cloning over SSH since
           # Minikube takes port 22.
           service:
