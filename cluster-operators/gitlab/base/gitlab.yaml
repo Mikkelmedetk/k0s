@@ -46,6 +46,12 @@ spec:
       nginx-ingress:
         enabled: false
       # Save resources, only 3 CPU
+      kas:
+        enabled: false
+      pages:
+        enabled: false
+      smartcard:
+        enabled: false
       prometheus:
         install: false
       gitlab-runner:
