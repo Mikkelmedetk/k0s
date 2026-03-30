@@ -66,13 +66,13 @@ spec:
           service:
             type: NodePort
             nodePort: 32022
-      registry:
-        enabled: false
-      pages:
-        enabled: false
-      kas:
-        enabled: false
-      smartcard:
-        enabled: false
-      minio:
-        enabled: false
+        registry:
+          enabled: false
+        pages:
+          enabled: false
+        kas:
+          enabled: false
+        smartcard:
+          enabled: false
+        minio:
+          enabled: false
